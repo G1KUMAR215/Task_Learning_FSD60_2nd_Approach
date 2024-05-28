@@ -1,0 +1,20 @@
+//Configuration
+git config --list
+
+git config --global user.name "GitHub_user_name_here"
+git config --global user.email "GitHub_email_address_here"
+
+git config --list
+
+//initial Stage
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/G1KUMAR215/Task_Learning_FSD60_2nd_Approach.git
+git push -u origin main
+
+//update
+git add .
+git commit -m "Second commit"
+git push
