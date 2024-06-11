@@ -8,22 +8,18 @@
 <body>
     <script>
         //Finding odd numbers in an array using Arrow Function
-        //Given array [1,4.7.9,40]
-        //Anonymous Function Approach
-        
+        //Given array [1,4.7.9,40]       
         var arr=[1,4,7,9,40]
         var OddNum=(arr)=>{
-        var odd=[];
-        for(var i=0;i<arr.length;i++){
-            if(arr[i]%2!=0){
-                odd.push(arr[i]);
+            var odd=[];
+            for(var i=0;i<arr.length;i++){
+                if(arr[i]%2!=0){
+                    odd.push(arr[i]);
+                }
             }
+            return odd;
         }
-        return odd;
-        }
-    console.log(OddNum(arr))
-    //IIFF Function Approach
-
+        console.log(OddNum(arr))
     </script>
 </body>
 </html>

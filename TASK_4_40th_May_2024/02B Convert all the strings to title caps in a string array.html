@@ -7,7 +7,18 @@
 </head>
 <body>
     <script>
-        
+        //Convert all the strings to title caps using Arrow Function
+        var str =["c","python","java","javascript","nodeJS"]
+        //console.log(str.length)
+        var titlecase=(str)=>{
+            var word=[];
+            for(var i=0;i<str.length;i++){
+                var a= str[i].charAt(0).toUpperCase()+str[i].substring(1,str[i].length);
+                word.push(a)
+            }
+            return word;
+        }
+        console.log(titlecase(str))
     </script>
 </body>
 </html>
