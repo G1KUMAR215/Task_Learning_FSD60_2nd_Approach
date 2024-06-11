@@ -7,42 +7,16 @@
 </head>
 <body>
     <script>
-        //Comparison two JSONS have the Same Properties without order
-        //To compare two JSON objects to see if they have the same properties regardless of order, 
-        //you can sort their keys and then compare their stringified versions. 
-        //Here is a step-by-step method to achieve this in JavaScript:
-        //Approach: Sort Keys and Compare
-        //Sort the Keys: Create a function that sorts the keys of an object recursively.
-        //Stringify: Convert the sorted object to a JSON string.
-        //Compare: Compare the two stringified JSON objects.
-
-        // Function to sort keys of an object recursively
-        function sortKeys(obj) {
-            if (typeof obj !== 'object' || obj === null) return obj;
-            if (Array.isArray(obj)) return obj.map(sortKeys);
-
-            const sortedObj = {};
-            Object.keys(obj).sort().forEach(key => {
-                sortedObj[key] = sortKeys(obj[key]);
-            });
-
-            return sortedObj;
+        var obj1={name:"Preson 1",age:5,dept:"FSD"};
+        var obj2={age:5,name:"Preson 1"};
+        var arr=[];arr1=[];
+        for(let key1 in obj1){
+            for(let key2 in obj2){
+                if(key1==key2 && obj1.key==obj2.key){
+                    console.log("Two Json having the same properties")
+                }
+            }
         }
-
-        // Function to compare two JSON objects
-        function compareJsonObjects(obj1, obj2) {
-            const sortedObj1 = JSON.stringify(sortKeys(obj1));
-            const sortedObj2 = JSON.stringify(sortKeys(obj2));
-            return sortedObj1 === sortedObj2;
-        }
-
-        // JSON objects
-        let obj1 = { name: "Person 1", age: 5 };
-        let obj2 = { age: 5, name: "Person 1" };
-
-        // Compare the JSON objects
-        console.log(compareJsonObjects(obj1, obj2)); // true
-
     </script>
 </body>
 </html>
