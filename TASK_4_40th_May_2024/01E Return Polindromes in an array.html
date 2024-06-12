@@ -14,8 +14,8 @@
             var str1=[]
             //console.log(str)          
             for(var i=0;i<=str.length;i++){                
-                var rev = str[i].split('').reverse().join('');
-                //console.log(word)
+                var rev = str[i].split("").reverse().join("");
+                console.log(rev)
                 if(str[i]==rev){
                     str1.push(str[i])
                 }
@@ -25,6 +25,20 @@
         console.log(polindrom(str));
         
         //IIFE function Approach
+        var polindrom=(function(str){
+            var str1=[]
+            //console.log(str)          
+            for(var i=0;i<=str.length;i++){                
+                var rev = str[i].split("").reverse().join("");
+                console.log(rev)
+                if(str[i]==rev){
+                    str1.push(str[i])
+                }
+            } 
+            return str1;
+        })(str)
+        console.log(OddNum1)
+
     </script>
     
 </body>

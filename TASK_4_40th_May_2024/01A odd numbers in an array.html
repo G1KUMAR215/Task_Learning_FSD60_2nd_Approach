@@ -23,6 +23,18 @@
         console.log(OddNum(arr))
         
         //IIFE function Approach
+        var OddNum1=(function(arr){
+            var odd=[];
+            for(var i = 0 ; i< arr.length ; i++){
+                    if(arr[i]%2!=0){
+                        odd.push(arr[i]);
+                    }
+            }
+            return odd;
+        })(arr)
+        console.log(OddNum1)
+
+                       
         
     </script>
 </body>

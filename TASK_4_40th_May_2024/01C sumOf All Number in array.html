@@ -21,6 +21,14 @@
         console.log(Sum(arr))
         
         //IIFE function Approach
+        var sum2=(function(arr){
+            var add=0;
+            for(var i=0;i<arr.length;i++){
+                add=add+arr[i]
+            }
+            return add;
+        })(arr)
+        console.log(sum2)
     </script>
 </body>
 </html>
