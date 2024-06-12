@@ -1,0 +1,7 @@
+
+1.Write a blog on the difference between document and window object?
+
+https://github.com/reach2arunprakash/javascript-101/tree/master/ppt
+
+
+
