@@ -1,0 +1,40 @@
+Difference between window, screen and document in Java Script
+In JavaScript, window, screen, and document are global objects that represent different parts of the browser environment. 
+Each serves a distinct purpose:
+
+1. window:
+The window object represents the browser window or tab containing a web page. It is the global object in the browser environment, meaning that all global JavaScript objects, functions, and variables automatically become members of the window object.
+
+Key properties and methods:
+
+i)window.innerWidth and window.innerHeight: The width and height of the window's content area (viewport).
+ii)window.alert(): Displays an alert dialog.
+iii)window.location: Represents the current URL and can be used to navigate to a different page.
+iv)window.setTimeout(): Calls a function or evaluates an expression after a specified number of milliseconds.
+
+2. screen:
+The screen object provides information about the user's screen, such as its width, height, and color depth. 
+This object is not used as frequently as window or document, but it can be useful for responsive design and multimedia applications.
+
+Key properties:
+
+i)screen.width and screen.height: The width and height of the user's screen in pixels.
+ii)screen.availWidth and screen.availHeight: The width and height of the screen, excluding operating system features like the taskbar.
+iii)screen.colorDepth: The number of bits used to display one color.
+
+3. document
+The document object represents the HTML or XML document loaded in the browser window. 
+It provides methods and properties to interact with and manipulate the content of the web page.
+
+Key properties and methods:
+
+i)document.getElementById(): Returns an element with a specified ID.
+ii)document.querySelector(): Returns the first element that matches a specified CSS selector.
+iii)document.createElement(): Creates a new element.
+iv)document.body: Represents the <body> element of the document.
+v)document.title: Gets or sets the title of the document.
+Summary
+window: Represents the browser window or tab and provides methods and properties for controlling it.
+screen: Provides information about the user's screen, such as dimensions and color depth.
+document: Represents the web page's content and provides methods and properties for interacting with it.
+Each of these objects serves a different role in web development, allowing you to interact with and manipulate various aspects of the user's browsing experience.

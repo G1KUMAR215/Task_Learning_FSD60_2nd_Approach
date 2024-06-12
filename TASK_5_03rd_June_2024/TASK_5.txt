@@ -1,0 +1,4 @@
+1.Create your own resume data in JSON format
+2.For the above JSON, iterate over all for loops (for, for in, for of, for Each)
+3. Read about the difference between window, screen and document in Java Script
+4.Codekata practice
