@@ -1,0 +1,11 @@
+JavaScript - Day -7: Array methods
+Activities
+https://docs.google.com/document/d/1iza9j-P6zsN0gZ9ZVuNH0lMxdUeuAYfaGMPvyWL_IcY/edit?usp=sharing
+ ARRAY METHODS
+
+Solving problems using array functions on rest countries data (https://restcountries.com/v3.1/all).
+Get all the countries from Asia continent /region using Filter method
+Get all the countries with a population of less than 2 lakhs using Filter method
+Print the following details name, capital, flag, using forEach method
+Print the total population of countries using reduce method
+Print the country that uses US dollars as currency.
