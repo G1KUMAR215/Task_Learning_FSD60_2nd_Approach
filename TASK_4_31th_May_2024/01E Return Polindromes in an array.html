@@ -25,8 +25,8 @@
         console.log(polindrom(str));
         
         //IIFE function Approach
-        var polindrom=(function(str){
-            var str1=[]
+        var polindrom1=(function(str){
+            var str2=[]
             //console.log(str)          
             for(var i=0;i<=str.length;i++){                
                 var rev = str[i].split("").reverse().join("");
@@ -35,9 +35,9 @@
                     str1.push(str[i])
                 }
             } 
-            return str1;
+            return str2;
         })(str)
-        console.log(OddNum1)
+        console.log(polindrom)
 
     </script>
     
