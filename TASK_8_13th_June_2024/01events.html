@@ -7,15 +7,44 @@
     <title>Event Listings</title>
 </head>
 <style>
-    .g1{
-        width:100px;        
+    body{
+        background-color: darkcyan;
+        font-family: Arial, sans-serif;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        border: 0;
+        padding: 5px;
     }
-    .g2{
+    .g1{
+        max-width: 1370px;
+        max-height: 1000px;
+        /* margin: 0;
+        border: 0;
+        padding: 5px; */
+    }
+    .g3{
+        background-color: darkcyan;
+        color: brown;
+        max-width: 1370px;
+        max-height: 1000px;
+        /* margin: 0;
+        border: 0;
+        padding: 5px; */
 
+    }
+    .g4{
+        background-color: darkcyan;
+        color: blue;
+        max-width: 1370px;
+        max-height: 1000px;
+        margin: 0;
+        border: 0;
+        padding: 5px;
     }
 </style>
 <body>
-    <div class="container mt-5">
+    <div class="container ">
         <h1 class="text-center mb-4">Search Events</h1>
         <!-- Search Box -->
         <div class="row mb-4">
@@ -27,224 +56,144 @@
             </div>
         </div>
     </div>
-    <div class="container mt-5">
+    <div class="container mt-5 g3">
         <div class="row">
             <!-- Event 1 -->
-            <div class="col-md-3 mb-4">
+            <div class="col-md-3 mb-4 g4">
+                
                 <div class="card">
-                    <img src="image1.jpg" class="card-img-top" alt="Event 1">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Event 1</h5>
-                        <p class="card-text">23-May-2020<br>Seats Available: 23</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
+                    <h5 class="card-title-center text-center">Event 1</h5>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col align-self-start ">
+                                <img src="https://img.freepik.com/free-vector/hand-drawn-culture-logo-design_23-2149857661.jpg?t=st=1719834410~exp=1719838010~hmac=eb1e1c247019e220580ad4f2cdd988930454642d69df8fb4ea8b4793897846e5&w=740" class="card-img-top g1" alt="Event 1" >
+                            </div>                            
+                            <div class="col align-self-end">                        
+                                <p class="card-text"><small>23-May-2020<br>Seats Available: 23</small></p>
+                                <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>                            
+                        </div> 
+                    </div>                    
                 </div>
             </div>
             <!-- Event 2 -->
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img src="image2.jpg" class="card-img-top" alt="Event 2">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Event 2</h5>
-                        <p class="card-text">23-May-2020<br>Seats Available: 23</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
+            <div class="col-md-3 mb-4 g4">                
+                <div class="card">                    
+                    <h5 class="card-title text-center">Event 2</h5>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col align-self-start">
+                                <img src="https://cdn.dribbble.com/userupload/14972752/file/original-52d6a635fca54706656add68f774f5b4.jpg?resize=752x" class="card-img-top g1" alt="Event 2">
+                            </div>
+                            <div class="col align-self-end">
+                                <div class="card-body text-center">
+                                    <p class="card-text"><small>23-May-2020<br>Seats Available: 23</small> </p>
+                                    <a href="#" class="btn btn-primary">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Event 3 -->
-            <div class="col-md-3 mb-4">
+            <div class="col-md-3 mb-4 g4">
                 <div class="card">
-                    <img src="image3.jpg" class="card-img-top" alt="Event 3">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Event 3</h5>
-                        <p class="card-text">23-May-2020<br>Seats Available: 0</p>
-                        <a href="#" class="btn btn-secondary disabled">Sold Out</a>
-                    </div>
+                    <h5 class="card-title text-center">Event 3</h5>
+                    <div class="row align-items-center" >
+                        <div class="col align-self-start">
+                            <img src="https://cdn.logojoy.com/wp-content/uploads/2018/05/30163537/7_big7.png" class="card-img-top g1" alt="Event 3">
+                        </div>
+                        <div class="col align-self-end">
+                            <div class="card-body text-center">                        
+                                <p class="card-text"> <small>23-May-2020<br>Seats Available: 0</small></p>
+                                <a href="#" class="btn btn-secondary disabled">Sold Out</a>
+                            </div>
+                        </div>
+                    </div>                                  
                 </div>
             </div>
             <!-- Event 4 -->
-            <div class="col-md-3 mb-4">
+            <div class="col-md-3 mb-4 g4">
                 <div class="card">
-                    <img src="image4.jpg" class="card-img-top" alt="Event 4">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Event 4</h5>
-                        <p class="card-text">23-May-2020<br>Seats Available: 23</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
+                    <h5 class="card-title text-center">Event 4</h5>
+                    <div class="row align-items-center">
+                        <div class="col align-self-start">
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/92fe9a37853461.574e884067985.jpg" class="card-img-top g1" alt="Event 4">
+                        </div>
+                        <div class="col align-self-end">
+                            <div class="card-body text-center">                        
+                                <p class="card-text"><small>23-May-2020<br>Seats Available: 23</small></p>
+                                <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>                            
+                        </div>
+                    </div>                   
                 </div>
             </div>
             <!-- Event 5 -->
-            <div class="col-md-3 mb-4">
+            <div class="col-md-3 mb-4 g4">
                 <div class="card">
-                    <img src="image5.jpg" class="card-img-top" alt="Event 5">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Event 5</h5>
-                        <p class="card-text">23-May-2020<br>Seats Available: 23</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
+                    <h5 class="card-title text-center">Event 5</h5>
+                    <div class="row align-items-center">
+                        <div class="col align-self-start">
+                            <img src="https://www.vectordesign.us/wp-content/uploads/2021/11/be-the-boss-events.webp" class="card-img-top g1" alt="Event 5">
+                        </div>
+                        <div class="col align-self-end">
+                            <div class="card-body text-center">
+                                <p class="card-text"><small>23-May-2020<br>Seats Available: 23</small></p>
+                                <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Event 6 -->
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img src="image6.jpg" class="card-img-top" alt="Event 6">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Event 6</h5>
-                        <p class="card-text">23-May-2020<br>Seats Available: 0</p>
-                        <a href="#" class="btn btn-secondary disabled">Sold Out</a>
-                    </div>
+            <div class="col-md-3 mb-4 g4">
+                <div class="card">                    
+                    <h5 class="card-title text-center">Event 6</h5>
+                    <div class="row align-items-center">
+                        <div class="col align-self-center">
+                            <img src="https://minio.production.cloudplatform.tech/scalable-pages/2022/08/Glasses.svg" class="card-img-top g1" alt="Event 6">
+                        </div>
+                        <div class="col align-self-end">
+                            <div class="card-body text-center">
+                                <p class="card-text"><small>23-May-2020<br>Seats Available: 0</small></p>
+                                <a href="#" class="btn btn-secondary disabled">Sold Out</a>
+                            </div>
+                        </div>
+                    </div>                  
                 </div>
             </div>
             <!-- Event 7 -->
-            <div class="col-md-3 mb-4">
+            <div class="col-md-3 mb-4 g4">
                 <div class="card">
-                    <img src="image7.jpg" class="card-img-top" alt="Event 7">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Event 7</h5>
-                        <p class="card-text">23-May-2020<br>Seats Available: 23</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
+                    <h5 class="card-title text-center">Event 7</h5>
+                    <div class="row align-items-center">
+                        <div class="col align-self-center">
+                            <img src="https://images.jdmagicbox.com/comp/ernakulam/m4/0484px484.x484.140206113128.a9m4/catalogue/we-create-events-panampilly-nagar-ernakulam-event-management-companies-nsobpzm660.jpg" class="card-img-top g1" alt="Event 7">
+                        </div>
+                        <div class="col align-self-end">
+                            <div class="card-body text-center">                        
+                                <p class="card-text"><small>23-May-2020<br>Seats Available: 23</small></p>
+                                <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Event 8 -->
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img src="image8.jpg" class="card-img-top" alt="Event 8">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Event 8</h5>
-                        <p class="card-text">23-May-2020<br>Seats Available: 23</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="card mb-3" style="max-width: 300px;">
-        <div class="row no-gutters">
-            <div class="col-md-4">
-                <img src="image.jpg" class="card-img" alt="Event Image">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="row no-gutters">
-            <div class="col-md-4">
-                <img src="image.jpg" class="card-img" alt="Event Image">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="col-md-3 mb-4">
-                <div class="card">
-                    <div class="col-md-4">
-                        <img  class="g1" src="https://socio.events/wp-content/uploads/2022/10/AdobeStock_503243650-2048x1184.jpeg" class="card-img-top" alt="Event 1" width="100px" height="100px">                    
-                    </div>                    
-                        <h5 class="card-title">Event 1</h5>
-                        <p class="card-text">23-May-2020<br>Seats Available: 23</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Event 2 -->
-            <div class="col-md-3 mb-4">
+            <div class="col-md-3 mb-4 g4">                
                 <div class="card"> 
-                    <div class="col-md-4">
-                        <img class="g1" src="https://socio.events/wp-content/uploads/2022/10/AdobeStock_306652796-2048x1199.jpeg" class="card-img-top" alt="Event 2" width="100px" height="100px">                   
-                    </div>                    
-                    <div class="card-body text-center">                        
-                        <h5 class="card-title">Event 2</h5>
-                        <p class="card-text">23-May-2020<br>Seats Available: 23</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Event 3 -->
-            <div class="col-md-3 mb-4">
-                <div class="card">  
-                    <div class="col-md-4">
-                        <img class="g1" src="https://socio.events/wp-content/uploads/2022/10/AdobeStock_505732878-2048x1365.jpeg" class="card-img-top" alt="Event 3" width="100px" height="100px">                 
-                    </div>                    
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Event 3</h5>                        
-                        <p class="card-text">23-May-2020<br>Seats Available: 0</p>
-                        <a href="#" class="btn btn-secondary disabled">Sold Out</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Event 4 -->
-            <div class="col-md-3 mb-4">
-                <div class="card"> 
-                    <div class="col-md-4">
-                        <img  class="g1" src="https://www.eventsindustryforum.co.uk/images/articles/about_the_eif.jpg" class="card-img-top" alt="Event 4" width="100px" height="100px">                   
-                    </div>                    
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Event 4</h5>                        
-                        <p class="card-text">23-May-2020<br>Seats Available: 23</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Event 5 -->
-            <div class="col-md-3 mb-4">
-                <div class="card"> 
-                    <div class="col-md-4">
-                        <img  class="g1" src="https://www.inventiva.co.in/wp-content/uploads/2023/05/eventshub_evergreen_opengraph_1200x630_2x.jpg" class="card-img-top" alt="Event 5" width="100px" height="100px">                 
-                    </div>                     
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Event 5</h5>                        
-                        <p class="card-text">23-May-2020<br>Seats Available: 23</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Event 6 -->
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <div class="col-md-4">
-                        <img  class="g1" src="https://content.jdmagicbox.com/comp/ernakulam/m4/0484px484.x484.140206113128.a9m4/catalogue/we-create-events-panampilly-nagar-ernakulam-event-management-companies-nsobpzm660.jpg" class="card-img-top" alt="Event 6" width="100px" height="100px">                
-                    </div>                     
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Event 6</h5>                       
-                        <p class="card-text">23-May-2020<br>Seats Available: 0</p>
-                        <a href="#" class="btn btn-secondary disabled">Sold Out</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Event 7 -->
-            <div class="col-md-3 mb-4">
-                <div class="card">  
-                    <div class="col-md-4">
-                        <img  class="g1" src="https://kalapeet.com/wp-content/uploads/2021/04/corporate-eents.jpg" class="card-img-top" alt="Event 7" width="100px" height="100px">                 
-                    </div>                       
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Event 7</h5>                        
-                        <p class="card-text">23-May-2020<br>Seats Available: 23</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Event 8 -->
-            <div class="col-md-3 mb-4">
-                <div class="card"> 
-                    <div class="col-md-4 text-bott">
-                        <img class="g1" src="https://assets.dnanetworks.co.in/dna/EventImages/Events/Independence-Day-Setup/1.jpg" class="card-img-top" alt="Event 8" width="100px" height="100px">                  
-                    </div>                     
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Event 8</h5>                        
-                        <p class="card-text">23-May-2020<br>Seats Available: 23</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
+                    <h5 class="card-title text-center">Event 8</h5> 
+                    <div class="row align-items-center">
+                        <div class="col align-self-center">
+                            <img src="https://media.istockphoto.com/id/499517325/photo/a-man-speaking-at-a-business-conference.jpg?s=1024x1024&w=is&k=20&c=iCUzJvudLPi2HnpAAzIVVqgQVAlnI9TigkEcXcH2NY4=" class="card-img-top g1" alt="Event 8">
+                        </div>
+                        <div class="col align-self-end">
+                            <div class="card-body card-right text-center">                        
+                                <p class="card-text"><small>23-May-2020<br>Seats Available: 23</small></p>
+                                <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
