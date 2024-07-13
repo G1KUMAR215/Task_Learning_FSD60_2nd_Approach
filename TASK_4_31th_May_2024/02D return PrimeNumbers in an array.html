@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Return PrimeNumbers in an Array
+        //Anonymous Function Approach
+        var arr=[1,4,7,9,40]
+        var Prime=(arr)=>{
+            var PrimeNumbers=[];
+            
+            for(var i=1;i<=arr.length;i++){
+                var count=0;
+                for(var j=1;j<=Math.sqrt(arr[i]).toFixed(0);j++){
+                     if(arr[i]%j == 0){
+                        count++;
+                    }
+                }
+                if(count ==1){
+                    PrimeNumbers.push(arr[i]);
+                }
+            }
+            return PrimeNumbers;
+        }                   
+        console.log(Prime(arr))
+    </script>
+</body>
+</html>

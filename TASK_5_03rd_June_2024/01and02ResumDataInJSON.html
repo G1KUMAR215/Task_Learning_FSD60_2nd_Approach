@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var jsonObj={
+            "FirstName":"JEEVAN KUMAR",
+            "LastName":"REDDYVARI",
+            "DateofDBirth":"23-07-1994",
+            "Qualification":"B.Tech",
+            "College":"Mother Theresa Institute of Engineering and Technology",
+            "Branch": "Electrical and Electronics Engineering",
+            "Percentage":65.79,
+            "Address":"2-85,KVS STREET,2ND CROSS,OLDPET,PALAMANER,CHITTOOR DIST,AP,IN-517408"
+        }
+
+        for(var key in jsonObj){
+            console.log("Key:"+key+":"+"Value:"+jsonObj[key])
+        }
+
+        for(var i=0; i<jsonObj.length;i++){
+            console.log("JSONObj:"+jsonObj[i])
+        }
+
+       var arr=["JEEVAN KUMAR","23-07-1994","Male"];
+       for(var elements of arr){
+        console.log(elements);
+       }
+       
+       arr.forEach(element => {
+        console.log(element);
+       });
+
+
+    </script>
+</body>
+</html>

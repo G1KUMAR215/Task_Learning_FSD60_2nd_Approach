@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    //Rotate an array by k times
+    //Annonymous Function Approach   
+    var arr = [1, 2, 3, 4, 5, 6, 7];
+    var k = 7;
+    var rotatefnl = function(arr,k){
+        var res=[];
+        for(var i=k; i<arr.length;i++){
+            res.push(arr[i]);  
+        }
+        for(var j=0 ;j<k;j++){
+            res.push(arr[j]); 
+        }
+        return res;
+    }
+    console.log("Rotate the Array of K times :"+ rotatefnl(arr,k).join(" "))
+    //IIFE function Approach
+    var rotatefn2=(function(arr,k){
+        var res=[];
+        for(var i=k; i<arr.length;i++){
+            res.push(arr[i]);  
+        }
+        for(var j=0 ;j<k;j++){
+            res.push(arr[j]); 
+        }
+        return res;
+    })(arr,k)
+    console.log("Rotate the Array of K times :"+ rotatefn2(arr,k).join(" "))
+    
+   </script> 
+</body>
+</html>

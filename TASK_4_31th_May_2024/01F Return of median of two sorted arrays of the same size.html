@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    //Return of median of two sorted arrays of the same size
+    //Annonymous Function Approach   
+    var num1 = [2, 6, 4, 1]
+    var num2 = [8, 11, 56, 12]
+    var medianArr=function(num1,num2){
+        var res=[];
+        med1=med1.sort(function(x,y){return x-y});
+        console.log(med1)
+        med2=med2.sort(function(x,y){return x-y});
+        console.log(med2)
+        var midIndex=Math.floor(parseInt(med1.length)/2)
+        console.log("Middle Index"+ midIndex)
+        var median=0 
+        if(med1.length%2===0){
+            median= parseInt(med1[midIndex-1])+parseInt(med1[midIndex])/2
+            console.log("median "+median)
+            res.push(median);
+        }else{
+            median=med1[midIndex]
+            console.log("median "+median)
+            res.push(median);
+    }
+    //IIFE function Approach
+   </script> 
+</body>
+</html>

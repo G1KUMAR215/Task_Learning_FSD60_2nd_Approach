@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Returning Palindroms in an array
+        //Annonymous Function Approach
+        var str=["racecar", "hello", "madam", "world", "level", "javascript","rotator"]
+        var polindrom=function(str){
+            var str1=[]
+            //console.log(str)          
+            for(var i=0;i<=str.length;i++){                
+                var rev = str[i].split("").reverse().join("");
+                console.log(rev)
+                if(str[i]==rev){
+                    str1.push(str[i])
+                }
+            } 
+            return str1;           
+        }
+        console.log(polindrom(str));
+        
+        //IIFE function Approach
+        var polindrom1=(function(str){
+            var str2=[]
+            //console.log(str)          
+            for(var i=0;i<=str.length;i++){                
+                var rev = str[i].split("").reverse().join("");
+                console.log(rev)
+                if(str[i]==rev){
+                    str1.push(str[i])
+                }
+            } 
+            return str2;
+        })(str)
+        console.log(polindrom)
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Finding odd numbers in an array using Anonymous and IIFE Function
+        //Given array [1,4.7.9,40]
+        //Anonymous Function Approach
+        var arr =[1,4,7,9,40];
+        var OddNum=function(arr){
+            var odd=[];
+            for(var i=0;i<arr.length;i++){
+                if(arr[i]%2!=0){
+                    odd.push(arr[i]);
+                }
+            }
+            return odd;
+        }
+        console.log(OddNum(arr))
+        
+        //IIFE function Approach
+        var OddNum1=(function(arr){
+            var odd=[];
+            for(var i = 0 ; i< arr.length ; i++){
+                    if(arr[i]%2!=0){
+                        odd.push(arr[i]);
+                    }
+            }
+            return odd;
+        })(arr)
+        console.log(OddNum1)
+
+                       
+        
+    </script>
+</body>
+</html>

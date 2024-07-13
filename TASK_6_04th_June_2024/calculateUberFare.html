@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class UberPriceCalculator {
+            constructor(baseFare, costPerMinute, costPerKilometer, surgeMultiplier = 1) {
+                this.baseFare = baseFare;
+                this.costPerMinute = costPerMinute;
+                this.costPerKilometer = costPerKilometer;
+                this.surgeMultiplier = surgeMultiplier;
+            }
+
+            calculateFare(minutes, kilometers) {
+                this.baseFare = baseFare;
+                this.costPerMinute = costPerMinute;
+                this.costPerKilometer = costPerKilometer;
+                this.surgeMultiplier = surgeMultiplier;
+                const timeCost = this.costPerMinute * minutes;
+                const distanceCost = this.costPerKilometer * kilometers;
+                const totalCost = (this.baseFare + timeCost + distanceCost) * this.surgeMultiplier;                
+                return totalCost;
+            }
+        }
+        const uberCalculator = new UberPriceCalculator(50, 2, 10, 1.2); // base fare: 50 INR, cost per minute: 2 INR, cost per km: 10 INR, surge multiplier: 1.2
+        const totalFare = uberCalculator.calculateFare(30, 15); // 30 minutes, 15 kilometers
+        console.log(`Total Fare: ₹${totalFare.toFixed(2)}`); // Output: Total Fare: ₹264.00
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj1={name:"Preson 1",age:5,dept:"FSD"};
+        var obj2={age:5,name:"Preson 1"};
+        var arr=[];arr1=[];
+        for(let key1 in obj1){
+            for(let key2 in obj2){
+                if(key1==key2 && obj1.key==obj2.key){
+                    console.log("Two Json having the same properties")
+                }
+            }
+        }
+    </script>
+</body>
+</html>

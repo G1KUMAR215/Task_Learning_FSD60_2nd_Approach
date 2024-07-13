@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person {
+            // Constructor to initialize the person's details
+            constructor(name, age, gender, address) {
+                this.name = name;
+                this.age = age;
+                this.gender = gender;
+                this.address = address;
+            }
+
+            getDetails(){
+                console.log(this.name,this.age,this.gender,this.address)
+                console.log(`My Name is ${this.name}, age is ${this.age},from ${this.address}`)
+            }
+        }
+        let person1 = new Person('R JEEVAN KUMAR', 29, 'Male', '#2-93,KVS STREET, 2ND CROSS,OLDPET,PALAMANER,CHITTOOR DIST,AP,IN-517408');
+        console.log(person1.getDetails());        
+    </script>
+</body>
+</html>
